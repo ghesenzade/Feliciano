@@ -1,0 +1,141 @@
+.book {
+    background-image: url("../images/bg_3.jpg.webp");
+    background-attachment: fixed;
+    // background-color: #000;
+    .container{
+        padding: 7em 0;
+        .col{
+            .card{
+                background-color: #fff;
+                width: 60%;
+                .txt{
+                    text-align: center;
+                }
+                form{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 40px;
+                    flex-wrap: wrap;
+                    .inputs{
+                        width: 50%;
+                        margin-bottom: 16px;
+                        label{
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            display: inline-block;
+                        }
+                        input{
+                            height: 52px;
+                            width: 90%;
+                            padding-left: 15px;
+                            border: 1px solid #dcdddd;
+                        }
+                    }
+                    .submit{
+                        margin-bottom: 48px;
+                        .btn{
+                            background: #c8a97e;
+                            border: 1px solid #c8a97e;
+                            color: #fff;
+                            padding: 16px 48px;
+                            border-radius: 2px;
+                            font-weight: 400;
+                            transition: 0.5s ease;
+                            &:hover{
+                                cursor: pointer;
+                                border: 1px solid #007bff;
+                                background-color: #007bff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1024px){
+    .book{
+        .container{
+            .col{
+                .card{
+                    .txt{
+                        .span{
+                            left: 60px;
+                        }
+                        .txt-h{
+                            font-size: 60px;
+                            top: -20px;
+                        }
+                    }
+                    form{
+                        .inputs{
+                            label{
+                                margin-left: 20px;
+                            }
+                            input{
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .book{
+        .container{
+            .col{
+                .card{
+                    .txt{
+                        .span{
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:320px){
+    .book{
+        height: 20vh;
+        background-position: center center;
+        .container{
+            padding: 7em 0;
+            .col{
+                padding: 1em 0;
+                .card{
+                    background-color: transparent;
+                    width: 100%;
+                    .txt{
+                        .span{
+                            font-size: 90px;
+                        }
+                        .txt-h{
+                            font-size: 40px;
+                            padding-left: 45px;
+                        }
+                    }
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .inputs{
+                            width: 100%;
+                            padding: 0 0 0 20px;
+                        }
+                        .submit{
+                            // width: 100%;
+                            padding: 0 0 0 30px;
+                            .btn{
+                                padding: 16px 57px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

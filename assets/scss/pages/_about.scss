@@ -1,0 +1,158 @@
+header{
+    background-attachment: fixed;
+    .container{
+        .header-content{
+            .logo{
+                a{
+                    color: #000;
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+            }
+            .nav-bar{
+                .nav-list{
+                    display: flex;
+                    .nav-item{
+                        // .home-a{
+                        //     color: #000 !important;
+                        //     transition: 0.3s ease;
+                        //     &:hover{
+                        //         color: #c8a97e !important;
+                        //     }
+                        // }
+                        // .about-a{
+                        //     color: #c8a97e;
+                        // }
+                        .nav-link{
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #000;
+                            padding: 12.8px 20px;
+                            transition: 0.3s ease;
+                            &:hover{
+                                color: #c8a97e;
+                            }
+                        }
+                        .book-btn{
+                            color: #fff;
+                            background-color: #c8a97e;
+                            border-radius: 5px;
+                            padding: 12.8px 20px;
+                            transition: 0.3s ease;
+                            &:hover{
+                                color: #000;
+                                background-color: antiquewhite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.hero-section{
+    background-image: url("../images/bg_3.jpg.webp");
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 0 15px;o
+    .overlay{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        background-color: #000;
+    }
+    .container{
+        .hero-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+            .hero-txt{
+                padding: 100px 0;
+                text-align: center;
+                margin-bottom: 100px;
+                h1{
+                    span{
+                        font-family: "Great Vibes", sans-serif;
+                        font-size: 80px;
+                        line-height: 1;
+                        color: #c8a97e;
+                        font-weight: normal;
+                    }
+                }
+                h1{
+                    font-size: 60px;
+                    line-height: 1.5;
+                    letter-spacing: 4px;
+                    font-family: "Poppins", Arial, sans-serif;
+                }
+            }
+        }
+    }
+}
+.about-section{
+    padding: 7em 0 0;
+}
+@media (max-width:870px) {
+    .hero-section{
+        .container{
+            .hero-content{
+                .hero-txt{
+                    h1{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:624px) {
+    .hero-section{
+        .container{
+            .hero-content{
+                .hero-txt{
+                    h1{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:530px) {
+    .hero-section{
+        .container{
+            .hero-content{
+                .hero-txt{
+                    h1{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:900px) {
+    .nav-list{
+        flex-wrap: wrap;
+        .nav-item{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    
+}
+@media (max-width:330px) {
+    .book{
+        margin-left: -50px;
+    }   
+}

@@ -1,0 +1,151 @@
+.testimony{
+    padding: 7em 0;
+    .container{
+        .col{
+            .txt{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 48px;
+                padding-bottom: 8px;
+                .txt-h{
+                    font-size: 40px;
+                    font-weight: 900;
+                    line-height: 1.2;
+                    top: -5px;
+                    margin-bottom: 24px;
+                }
+                .span{
+                    left: 35%;
+                }
+            }
+            .testi-cards{
+                .testi-card{
+                    margin-right: 30px;
+                    .text{
+                        text-align: center;
+                        margin-top: 24px;
+                        .name{
+                            font-weight: 400;
+                            font-size: 22px;
+                            color: #000;
+                        }
+                        .customer{
+                            font-size: 12px;
+                            letter-spacing: 2px;
+                            font-weight: 600;
+                            color: #666666;
+                        }
+                    }
+                    .testi-img{
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 50%;
+                        position: relative;
+                        margin: 0 auto;
+                        background-position: top center;
+                        span{
+                            position: absolute;
+                            bottom: -10px;
+                            right: 0;
+                            width: 40px;
+                            height: 40px;
+                            background-color: #c8a97e;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #fff;
+                        }
+                    }
+                    .testi-img-one{
+                        background-image: url("../images/person_3.jpg.webp");
+                    }
+                    .testi-img-two{
+                        background-image:url("../images/person_1.jpg.webp");
+                    }
+                    .testi-img-three{
+                        background-image: url("../images/person_2.jpg.webp");
+                    }
+                }
+            }
+            .testi-foot{
+                align-items: center;
+                justify-content: center;
+                margin-top: 48px;
+                div{
+                    width: 10px;
+                    height: 10px;
+                    margin: 5px;
+                    border-radius: 50%;
+                    background-color: #c8a97e;
+                    transition: 0.3s ease;
+                    &:hover{
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1024px){
+    .testimony{
+        .container{
+            .col{
+                .txt{
+                    .span{
+                        left: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .testimony{
+        .container{
+            .col{
+                .txt{
+                    .span{
+                        left: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:320px){
+    .testimony{
+        margin-top: 60em;
+        .container{
+            padding: 0 15px;
+            .col{
+                .txt{
+                    .span{
+                        left: 5%;
+                        font-size: 80px;
+                    }
+                    .txt-h{
+                        text-align: center;
+                        top: -25px;
+                    }
+                }
+                .testi-cards{
+                    margin-top: -20px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .testi-card{
+                        margin-bottom: 30px;
+                        width: 100%;
+                        .text{
+                            span{
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

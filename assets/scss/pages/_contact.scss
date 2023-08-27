@@ -1,0 +1,92 @@
+.contact-sec{
+    padding: 7em 0;
+    .container{
+        .row{
+            justify-content: space-between;
+            .contact-form{
+                .col{
+                    padding: 48px;
+                    .col-txt{
+                        h2{
+                            font-weight: 700;
+                            line-height: 1.5;
+                            margin-bottom: 48px;
+                            font-size: 24px;
+                        }
+                    }
+                    form{
+                        input{
+                            width: 100%;
+                            margin-bottom: 16px;
+                            padding: 0 15px;
+                            height: 52px ;
+                            background: #fff ;
+                            color: #000000 ;
+                            font-size: 16px;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        textarea{
+                            padding: 0 15px;
+                            font-size: 16px;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        .btn{
+                            input{
+                                background-color: #c8a97e;
+                                border: 1px solid #c8a97e;
+                                margin-top: 20px;
+                                width: 50%;
+                                color: #fff;
+                                transition: 0.5s ease;
+                                &:hover{
+                                    border: 1px solid #007bff;
+                                    background-color: #007bff;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-info{
+    padding: 7em 0;
+    .container{
+        .col{
+            .cont-txt{
+                h2{
+                    margin-bottom: 8px;
+                }
+            }
+            .row{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                .map{
+                    a{
+                        img{
+                            width: 75%;
+                            height: 100px;
+                            padding-top: 60%;
+                        }
+                    }
+                }
+                .info{
+                    width: 25%;
+                    p{
+                        a{
+                            color: #c8a97e;
+                            transition: 0.5s ease;
+                            &:hover{
+                                color: #007bff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

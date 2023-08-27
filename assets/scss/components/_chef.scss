@@ -1,0 +1,152 @@
+.chef{
+    padding: 7em 0;
+    // background-color: #000;
+    .container{
+        .col{
+            .txt{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 48px;
+                padding-bottom: 8px;
+                .span{
+                    left: 40%;
+                }
+            }
+            .chef-cards{
+                .chef-card{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    .chef-txt{
+                        h3{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        span{
+                            font-size: 14px;
+                            color: rgba(0, 0, 0, 0.3);
+                            display: block;
+                            font-family: "Poppins", Arial, sans-serif;
+                            margin-bottom: 8px;
+                        }
+                        .chef-icons{
+                            ul{
+                                margin-bottom: 16px;
+                                li{
+                                    margin-right: 10px;
+                                    i{
+                                        color: #c8a97e;
+                                        line-height: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .chef-img{
+                        img{
+                            border-radius: 5px;
+                            height: 250px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:980px) {
+    .chef{
+        .container{
+            .col{
+                .chef-cards{
+                    .chef-card{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .chef{
+        .container{
+            .col{
+                .chef-cards{
+                    flex-wrap: wrap;
+                    .chef-card{
+                        .chef-img{
+                            img{
+                                height:320px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .txt{
+                    .span{
+                        left:35%;
+                    }
+                    .txt-h{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:320px){
+    .chef{
+        .container{
+            padding: 0 15px;
+            .col{
+                .txt{
+                    .span{
+                        left: 25%;
+                    }
+                    .txt-h{
+                        font-size: 36px;
+                        text-align: center;
+                        padding-left: 20px;
+                    }
+                }
+                .chef-cards{
+                    display: flex;
+                    flex-direction: column;
+                    .chef-card{
+                        width: 100%;
+                        .chef-img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media(max-width:500px) {
+//     .chef{
+//         .container{
+//             .col{
+//                 // .chef-cards{
+//                 //     .chef-card{
+//                 //         width: 100%;
+//                 //         display: flex;
+//                 //         flex-direction: column;
+//                 //         .chef-img{
+//                 //             height: 300px;
+//                 //             width: 100%;
+//                 //         }
+//                 //     }
+//                 // }
+//                 .txt{
+//                     .span{
+//                         left:35%;
+//                     }
+//                     .txt-h{
+//                         font-size: 30px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
